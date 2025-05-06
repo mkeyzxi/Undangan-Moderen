@@ -91,7 +91,7 @@ const Footer = () => {
             href="https://sosmed-mbul.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-2 px-4 py-1 border border-primary-500 text-primary-400 rounded-full hover:bg-primary-500 hover:text-white transition"
+            className="inline-block mt-2 px-4 py-1 border border-green-500 text-green-400 rounded-full hover:bg-green-500 hover:text-white transition"
           >
             Kontak & Pemesanan
           </a>
