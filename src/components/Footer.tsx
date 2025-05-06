@@ -7,7 +7,7 @@ import { format } from 'date-fns';
 const Footer = () => {
   const eventDate = new Date(eventDetails.date);
   const formattedDate = format(eventDate, 'dd MMMM yyyy');
-  
+
   return (
     <footer className="bg-neutral-950 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -15,30 +15,30 @@ const Footer = () => {
           <div className="md:w-1/3">
             <h3 className="font-display text-2xl mb-4">Zandi & Suci</h3>
             <p className="text-neutral-400 mb-6">
-              Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Sdr.(i) 
+              Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Sdr.(i)
               berkenan hadir untuk memberikan doa restu kepada kedua mempelai.
             </p>
             <div className="flex items-center gap-2 text-primary-400">
               {/* <Heart size={20} className="text-primary-500" /> */}
               <svg
-  xmlns="http://www.w3.org/2000/svg"
-  width="20"
-  height="20"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  strokeWidth="2"
-  strokeLinecap="round"
-  strokeLinejoin="round"
-  className="lucide lucide-heart-icon lucide-heart text-primary-500"
->
-  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-</svg>
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-heart-icon lucide-heart text-primary-500"
+              >
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+              </svg>
 
               <span>15.05.2025</span>
             </div>
           </div>
-          
+
           <div className="md:w-1/3">
             <h3 className="font-display text-2xl mb-4">Wedding Info</h3>
             <ul className="space-y-4 text-neutral-400">
@@ -65,19 +65,37 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div className="md:w-1/3">
             <h3 className="font-display text-2xl mb-4">Ucapan</h3>
             <p className="text-neutral-400 mb-6">
-              "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, 
+              "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri,
               supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang."
             </p>
             <p className="text-primary-400 font-medium">(QS. Ar-Rum: 21)</p>
           </div>
         </div>
-        
-        <div className="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-500">
+
+        {/* <div className="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-500">
           <p>&copy; 2025 Zandi & Suci Wedding. All rights reserved.</p>
+        </div> */}
+        <div className="border-t border-neutral-800 pt-8 text-center text-sm text-neutral-500 gap-4 flex flex-col items-center">
+         <div className="">
+         <p>&copy; 2025 Zandi & Suci Wedding. All rights reserved.</p>
+          <p className="mt-2">
+            Developed by <span className="text-white font-medium">Muhammad Makbul N (mkeyzxi)</span>
+          </p>
+         </div>
+         <div className="">
+         <a
+            href="https://sosmed-mbul.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block mt-2 px-4 py-1 border border-primary-500 text-primary-400 rounded-full hover:bg-primary-500 hover:text-white transition"
+          >
+            Kontak & Pemesanan
+          </a>
+         </div>
         </div>
       </div>
     </footer>
